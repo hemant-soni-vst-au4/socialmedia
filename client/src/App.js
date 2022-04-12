@@ -9,7 +9,7 @@ import useStyles from './style'
 function App() {
   const classes = useStyles();
   return (
-    <Container maxidth="lg">
+    <Container>
       <AppBar className={classes.appBar} position="fixed" color="primary">
         <Toolbar>
           <Typography className={classes.heading} variant="h4" align="center">
@@ -20,7 +20,7 @@ function App() {
       <Grow in>
         <Container>
           <Grid container justify="space-between" alignItems="stretch" spacing={3}>
-            <Grid item xs={12} sm={7}>
+            <Grid item xs={12} sm={8}>
               <Posts/>
             </Grid>
             <Grid item xs={12} sm={4}>
